@@ -18,6 +18,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+<<<<<<< HEAD
       - name: Check for Outdated Dependencies
         run: npm outdated
 
@@ -26,6 +27,10 @@ jobs:
 
       - name: Run Tests
         run: npx jest --runInBand
+=======
+      # - name: Run Tests
+      #   run: npm install --save-dev jest  # Use npx to avoid permission issues
+>>>>>>> ca674b675587a20d5a2b3537bafacdc1e888bfbe
 
       - name: Build Docker Image
         run: docker build -t networth-tracker-api .

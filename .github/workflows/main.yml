@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run: npx jest --runInBand  # Use npx to avoid permission issues
+        run: npm install --save-dev jest  # Use npx to avoid permission issues
 
       - name: Build Docker Image
         run: docker build -t networth-tracker-api .

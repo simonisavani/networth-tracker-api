@@ -18,8 +18,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm install --save-dev jest  # Use npx to avoid permission issues
+      # - name: Run Tests
+      #   run: npm install --save-dev jest  # Use npx to avoid permission issues
 
       - name: Build Docker Image
         run: docker build -t networth-tracker-api .
